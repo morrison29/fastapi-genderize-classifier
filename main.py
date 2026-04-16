@@ -73,7 +73,8 @@ async def classify_name(name: str = Query(...)):
             }
         }
 
-    except httpx.RequestError:
+    except httpx.RequestError as e:
+        print(e)
         raise HTTPException(
             status_code=500,
             detail={"status": "error", "message": "Internal server error"}
