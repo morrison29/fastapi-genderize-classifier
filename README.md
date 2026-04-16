@@ -32,4 +32,4 @@ uvicorn main:app --reload
 FastAPI, Python, httpx
 
 ## Live API
-https://your-app.up.railway.app
+https://stage-0-project.up.railway.app
