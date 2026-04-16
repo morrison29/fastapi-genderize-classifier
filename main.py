@@ -5,11 +5,11 @@ from datetime import datetime, timezone
 
 app = FastAPI()
 
-# ✅ CORS (REQUIRED)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
